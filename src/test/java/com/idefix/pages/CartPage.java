@@ -42,6 +42,6 @@ public class CartPage extends BasePage {
 
     public void verifyCartIsEmpty() {
         wait.until(driver -> !isVisible(loadingSkeleton) && isVisible(emptyCartMessage));
-        assertThat(getText(emptyCartMessage)).isEqualTo("Sepetinizde henüz ürün bulunmuyor");
+        assertThat(getText(emptyCartMessage)).isEqualTo("Sepetinizde henüz ürün bulunmuyor.");
     }
 }
