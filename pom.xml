@@ -12,6 +12,7 @@
         <maven.compiler.target>21</maven.compiler.target>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <gauge.version>1.0.1</gauge.version>
+        <gauge.maven.plugin.version>1.6.4</gauge.maven.plugin.version>
         <selenium.version>4.33.0</selenium.version>
         <jackson.version>2.19.0</jackson.version>
         <log4j.version>2.24.3</log4j.version>
@@ -69,6 +70,11 @@
                     <source>${maven.compiler.source}</source>
                     <target>${maven.compiler.target}</target>
                 </configuration>
+            </plugin>
+            <plugin>
+                <groupId>com.thoughtworks.gauge.maven</groupId>
+                <artifactId>gauge-maven-plugin</artifactId>
+                <version>${gauge.maven.plugin.version}</version>
             </plugin>
         </plugins>
     </build>
